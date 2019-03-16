@@ -4,7 +4,7 @@ To be used carefully
 
 ## Initialization
 
-**Must have `python3` installed**
+**Install `python3` [here](https://www.python.org/downloads/)**
 
 ```bash
 pip3 install pynput
