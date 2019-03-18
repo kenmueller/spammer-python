@@ -18,8 +18,7 @@ def pressKey(key):
 for i in range(count):
 	progress = math.floor(i / count * 15)
 	print(('[' + ('=' * progress + '>' + '.' * (15 - progress))[1:])[:-2] + ']', end='\r')
-	for letter in message:
-		pressKey(letter)
+	keyboard.type(message)
 	pressKey(Key.enter)
 	time.sleep(waitTime)
 
