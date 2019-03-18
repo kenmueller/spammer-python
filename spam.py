@@ -9,6 +9,7 @@ for i in range(5):
 	time.sleep(1)
 
 keyboard = Controller()
+waitTime = 0.01 * len(message)
 
 def pressKey(key):
 	keyboard.press(key)
@@ -20,6 +21,6 @@ for i in range(count):
 	for letter in message:
 		pressKey(letter)
 	pressKey(Key.enter)
-	time.sleep(0.05)
+	time.sleep(waitTime)
 
 print('Done           ')
